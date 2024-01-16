@@ -24,3 +24,16 @@ D:\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 A
 D:\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.exe
 D:\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.xml
 D:\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.pdb
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\bin\Debug\BG3 ACHCG.exe.config
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\bin\Debug\BG3 ACHCG.exe
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\bin\Debug\BG3 ACHCG.pdb
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\bin\Debug\BG3 ACHCG.xml
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.vbproj.AssemblyReference.cache
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3_ACHCG.Main.resources
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3_ACHCG.Resources.resources
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3_ACHCG.Snips.resources
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.vbproj.GenerateResource.cache
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.vbproj.CoreCompileInputs.cache
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.exe
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.xml
+C:\Users\Bailey\Dropbox\Programming\BG3 AllClassesHornCodeGenerator\BG3 ACHCG\obj\Debug\BG3 ACHCG.pdb

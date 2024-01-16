@@ -549,7 +549,7 @@
 			<!-- Not referenced anywhere else, uniquely generated UUID   -->
                     <attribute id="UUID" type="guid" value="CCAV_HRC_M"/>
 			<!-- This matches the UUID of the horn mesh in _merged-->
-                    <attribute id="VisualResource" type="guid" value="UUID_HRC_F"/>
+                    <attribute id="VisualResource" type="guid" value="UUID_HRC_M"/>
             </node>			
 
 

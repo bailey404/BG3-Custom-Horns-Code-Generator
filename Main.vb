@@ -48,17 +48,28 @@
 
     Public Function GetFilePath(filterType) As String 'This is to get the file path needed for the snippet generation. It returns the path to the chosen file starting inside the "Generated" folder.
         Dim filePath As String
+        Dim folderPath As String
         Using OpenFileDialog = New OpenFileDialog()
             If filterType = "DDS" Then
                 OpenFileDialog.Filter = "DDS Files (*.dds)|*.dds"
-            End If
-            If filterType = "GR2" Then
+            ElseIf filterType = "GR2" Then
                 OpenFileDialog.Filter = "GR2 Files (*.GR2)|*.GR2"
+            ElseIf filterType = "Folder" Then 'This option was added in later. There's probably a cleaner way to do this, but it works for now.
+                If FolderBrowserDialog.ShowDialog() = DialogResult.OK Then
+                    folderPath = FolderBrowserDialog.SelectedPath
+                    Dim folderPathArray() As String = Split(folderPath, Delimiter:="Generated")
+                    Return "Generated" & folderPathArray(1)
+                Else
+                    Return "NO PATH SELECTED"
+                End If
+
             End If
             If OpenFileDialog.ShowDialog() = DialogResult.OK Then
                 filePath = OpenFileDialog.FileName
                 Dim filePathArray() As String = Split(filePath, Delimiter:="Generated")
                 Return "Generated" & filePathArray(1) 'I'm sure there's a way to concatenate in the declaration but that optimization is low priority right now.
+            Else
+                Return "NO PATH SELECTED" 'In case someone exits the dialog without choosing a file. The way it's currently set up, it throws an error. Changing the process is low priority right now as it functions fine otherwise.
             End If
         End Using
     End Function
@@ -225,7 +236,8 @@
                                                 "CCAV_HEL_FS", "CCAV_HEL_MS", "CCAV_HEL_F", "CCAV_HEL_M", "CCAV_DRO_FS", "CCAV_DRO_MS",
                                                 "CCAV_DRO_F", "CCAV_DRO_M", "CCAV_TIF_FS", "CCAV_TIF_MS", "CCAV_TIF_F", "CCAV_TIF_M",
                                                 "CCAV_GTY_F", "CCAV_GTY_M", "CCAV_DWR_F", "CCAV_DWR_M", "CCAV_HLF_F", "CCAV_HLF_M",
-                                                "CCAV_GNO_F", "CCAV_GNO_M", "CCAV_DGB_F", "CCAV_DGB_M", "CCAV_DGB_F", "CCAV_DGB_M"}
+                                                "CCAV_GNO_F", "CCAV_GNO_M", "CCAV_DGB_F", "CCAV_DGB_M", "CCAV_DGB_F", "CCAV_DGB_M",
+                                                "CCAV_HRC_F", "CCAV_HRC_M"}
         'An array of the placeholders to be swapped out.
         Dim input_CCAV = New String() {tbox_displayed_name.Text, tbox_namehandle.Text, tbox_UUID_hum_FS.Text, tbox_UUID_hum_MS.Text, tbox_UUID_hum_F.Text, tbox_UUID_hum_M.Text,
                                         tbox_UUID_tif_FS.Text, tbox_UUID_tif_MS.Text, tbox_UUID_tif_F.Text, tbox_UUID_tif_M.Text, tbox_UUID_git_F.Text, tbox_UUID_git_M.Text,
@@ -235,7 +247,8 @@
                                         GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(),
                                         GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(),
                                         GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(),
-                                        GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID()}
+                                        GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(), GenUUID(),
+                                        GenUUID(), GenUUID()}
         'An array of the inputs to be swapped out. The chunk of UUID generator functions are for specific CCAV UUIDs for each race/build combo.
         'Since they don't appear anywhere else in the files, they're getting generated here.
         'I'm sure there's a better way to do that than pasting the same function call 30+ times but that's optimization for a later date.
@@ -484,5 +497,50 @@
         tbox_output_mergedMaterial.Text = ""
         tbox_output_mergedMesh.Text = ""
         tbox_output_mergedTextures.Text = ""
+    End Sub
+
+    Private Sub btn_autofill_mesh_paths_Click(sender As Object, e As EventArgs) Handles btn_autofill_mesh_paths.Click
+        Dim meshPrefix = tbox_mesh_prefix.Text & ".GR2"
+        Dim filePath = GetFilePath("Folder")
+        filePath = filePath.Replace("\", "/")
+
+        'The "mesh prefix" used in this originally was meant to be a prefix, but it turned out to work better as a suffix in the filenames.
+        'It annoys me and will be changed soon.
+
+        tbox_path_dragon_F.Text = filePath & "/DGB_F_" & meshPrefix
+        tbox_path_dragon_M.Text = filePath & "/DGB_M_" & meshPrefix
+        tbox_path_dwarf_F.Text = filePath & "/DWR_F_" & meshPrefix
+        tbox_path_dwarf_M.Text = filePath & "/DWR_M_" & meshPrefix
+        tbox_path_gith_F.Text = filePath & "/GTY_F_" & meshPrefix
+        tbox_path_gith_M.Text = filePath & "/GTY_M_" & meshPrefix
+        tbox_path_gnome_F.Text = filePath & "/GNO_F_" & meshPrefix
+        tbox_path_gnome_M.Text = filePath & "/GNO_M_" & meshPrefix
+        tbox_path_half_F.Text = filePath & "/HLF_F_" & meshPrefix
+        tbox_path_half_M.Text = filePath & "/HLF_M_" & meshPrefix
+        tbox_path_humanoid_F.Text = filePath & "/HUM_F_" & meshPrefix
+        tbox_path_humanoid_FS.Text = filePath & "/HUM_FS_" & meshPrefix
+        tbox_path_humanoid_M.Text = filePath & "/HUM_M_" & meshPrefix
+        tbox_path_humanoid_MS.Text = filePath & "/HUM_MS_" & meshPrefix
+        tbox_path_orc_F.Text = filePath & "/HRC_F_" & meshPrefix
+        tbox_path_orc_M.Text = filePath & "/HRC_M_" & meshPrefix
+        tbox_path_tif_F.Text = filePath & "/TIF_F_" & meshPrefix
+        tbox_path_tif_FS.Text = filePath & "/TIF_FS_" & meshPrefix
+        tbox_path_tif_M.Text = filePath & "/TIF_M_" & meshPrefix
+        tbox_path_tif_MS.Text = filePath & "/TIF_MS_" & meshPrefix
+
+        'I am 100% sure there's a cleaner way to do this. But I love spaghetti. (Another bullet point on the optimization to-do list...)
+
+    End Sub
+
+    Private Sub btn_autofill_texture_paths_Click(sender As Object, e As EventArgs) Handles btn_autofill_texture_paths.Click
+        Dim texturePrefix = tbox_texture_prefix.Text
+        Dim filePath = GetFilePath("Folder")
+        filePath = filePath.Replace("\", "/")
+
+        tbox_path_BM.Text = filePath & "/" & texturePrefix & "_BM.dds"
+        tbox_path_MSK.Text = filePath & "/" & texturePrefix & "_MSK.dds"
+        tbox_path_NM.Text = filePath & "/" & texturePrefix & "_NM.dds"
+        tbox_path_PM.Text = filePath & "/" & texturePrefix & "_PM.dds"
+
     End Sub
 End Class

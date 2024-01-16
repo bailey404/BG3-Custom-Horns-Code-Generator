@@ -30,6 +30,8 @@ Partial Class Main
         Me.menu_settings_1click_copy = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu_strip_item_help = New System.Windows.Forms.ToolStripMenuItem()
         Me.grp_mesh_files = New System.Windows.Forms.GroupBox()
+        Me.lbl_help_autofill_mesh_paths = New System.Windows.Forms.Label()
+        Me.btn_autofill_mesh_paths = New System.Windows.Forms.Button()
         Me.lbl_help_mesh_prefix = New System.Windows.Forms.Label()
         Me.lbl_mesh_prefix = New System.Windows.Forms.Label()
         Me.tbox_mesh_prefix = New System.Windows.Forms.TextBox()
@@ -102,6 +104,8 @@ Partial Class Main
         Me.btn_path_humanoid_M = New System.Windows.Forms.Button()
         Me.tbox_path_humanoid_M = New System.Windows.Forms.TextBox()
         Me.grp_textures = New System.Windows.Forms.GroupBox()
+        Me.lbl_help_autofill_texture_paths = New System.Windows.Forms.Label()
+        Me.btn_autofill_texture_paths = New System.Windows.Forms.Button()
         Me.lbl_help_texture_prefix = New System.Windows.Forms.Label()
         Me.lbl_texture_prefix = New System.Windows.Forms.Label()
         Me.tbox_texture_prefix = New System.Windows.Forms.TextBox()
@@ -213,6 +217,7 @@ Partial Class Main
         Me.tbox_output_mergedMaterial = New System.Windows.Forms.RichTextBox()
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.FolderBrowserDialog = New System.Windows.Forms.FolderBrowserDialog()
         Me.MenuStrip.SuspendLayout()
         Me.grp_mesh_files.SuspendLayout()
         Me.grp_mesh_orc.SuspendLayout()
@@ -279,6 +284,8 @@ Partial Class Main
         '
         'grp_mesh_files
         '
+        Me.grp_mesh_files.Controls.Add(Me.lbl_help_autofill_mesh_paths)
+        Me.grp_mesh_files.Controls.Add(Me.btn_autofill_mesh_paths)
         Me.grp_mesh_files.Controls.Add(Me.lbl_help_mesh_prefix)
         Me.grp_mesh_files.Controls.Add(Me.lbl_mesh_prefix)
         Me.grp_mesh_files.Controls.Add(Me.tbox_mesh_prefix)
@@ -291,20 +298,41 @@ Partial Class Main
         Me.grp_mesh_files.Controls.Add(Me.grp_mesh_halfling)
         Me.grp_mesh_files.Controls.Add(Me.grp_mesh_humanoid)
         Me.grp_mesh_files.Location = New System.Drawing.Point(16, 33)
-        Me.grp_mesh_files.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_files.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_files.Name = "grp_mesh_files"
-        Me.grp_mesh_files.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_files.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_files.Size = New System.Drawing.Size(385, 548)
         Me.grp_mesh_files.TabIndex = 2
         Me.grp_mesh_files.TabStop = False
         Me.grp_mesh_files.Text = "Mesh Files"
+        '
+        'lbl_help_autofill_mesh_paths
+        '
+        Me.lbl_help_autofill_mesh_paths.AutoSize = True
+        Me.lbl_help_autofill_mesh_paths.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_help_autofill_mesh_paths.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_help_autofill_mesh_paths.Location = New System.Drawing.Point(346, 27)
+        Me.lbl_help_autofill_mesh_paths.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_help_autofill_mesh_paths.Name = "lbl_help_autofill_mesh_paths"
+        Me.lbl_help_autofill_mesh_paths.Size = New System.Drawing.Size(17, 17)
+        Me.lbl_help_autofill_mesh_paths.TabIndex = 24
+        Me.lbl_help_autofill_mesh_paths.Text = "?"
+        '
+        'btn_autofill_mesh_paths
+        '
+        Me.btn_autofill_mesh_paths.Location = New System.Drawing.Point(234, 45)
+        Me.btn_autofill_mesh_paths.Name = "btn_autofill_mesh_paths"
+        Me.btn_autofill_mesh_paths.Size = New System.Drawing.Size(129, 27)
+        Me.btn_autofill_mesh_paths.TabIndex = 23
+        Me.btn_autofill_mesh_paths.Text = "Auto-Populate"
+        Me.btn_autofill_mesh_paths.UseVisualStyleBackColor = True
         '
         'lbl_help_mesh_prefix
         '
         Me.lbl_help_mesh_prefix.AutoSize = True
         Me.lbl_help_mesh_prefix.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_help_mesh_prefix.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_help_mesh_prefix.Location = New System.Drawing.Point(327, 27)
+        Me.lbl_help_mesh_prefix.Location = New System.Drawing.Point(196, 27)
         Me.lbl_help_mesh_prefix.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_help_mesh_prefix.Name = "lbl_help_mesh_prefix"
         Me.lbl_help_mesh_prefix.Size = New System.Drawing.Size(17, 17)
@@ -324,9 +352,9 @@ Partial Class Main
         'tbox_mesh_prefix
         '
         Me.tbox_mesh_prefix.Location = New System.Drawing.Point(19, 47)
-        Me.tbox_mesh_prefix.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_mesh_prefix.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_mesh_prefix.Name = "tbox_mesh_prefix"
-        Me.tbox_mesh_prefix.Size = New System.Drawing.Size(324, 22)
+        Me.tbox_mesh_prefix.Size = New System.Drawing.Size(194, 22)
         Me.tbox_mesh_prefix.TabIndex = 20
         '
         'grp_mesh_orc
@@ -338,9 +366,9 @@ Partial Class Main
         Me.grp_mesh_orc.Controls.Add(Me.btn_path_orc_M)
         Me.grp_mesh_orc.Controls.Add(Me.tbox_path_orc_M)
         Me.grp_mesh_orc.Location = New System.Drawing.Point(208, 446)
-        Me.grp_mesh_orc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_orc.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_orc.Name = "grp_mesh_orc"
-        Me.grp_mesh_orc.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_orc.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_orc.Size = New System.Drawing.Size(167, 92)
         Me.grp_mesh_orc.TabIndex = 19
         Me.grp_mesh_orc.TabStop = False
@@ -372,7 +400,7 @@ Partial Class Main
         Me.btn_path_orc_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_orc_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_orc_F.Location = New System.Drawing.Point(93, 55)
-        Me.btn_path_orc_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_orc_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_orc_F.Name = "btn_path_orc_F"
         Me.btn_path_orc_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_orc_F.TabIndex = 13
@@ -384,7 +412,7 @@ Partial Class Main
         Me.tbox_path_orc_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_orc_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_orc_F.Location = New System.Drawing.Point(9, 55)
-        Me.tbox_path_orc_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_orc_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_orc_F.Name = "tbox_path_orc_F"
         Me.tbox_path_orc_F.ReadOnly = True
         Me.tbox_path_orc_F.Size = New System.Drawing.Size(84, 22)
@@ -396,7 +424,7 @@ Partial Class Main
         Me.btn_path_orc_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_orc_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_orc_M.Location = New System.Drawing.Point(93, 23)
-        Me.btn_path_orc_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_orc_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_orc_M.Name = "btn_path_orc_M"
         Me.btn_path_orc_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_orc_M.TabIndex = 11
@@ -408,7 +436,7 @@ Partial Class Main
         Me.tbox_path_orc_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_orc_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_orc_M.Location = New System.Drawing.Point(9, 23)
-        Me.tbox_path_orc_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_orc_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_orc_M.Name = "tbox_path_orc_M"
         Me.tbox_path_orc_M.ReadOnly = True
         Me.tbox_path_orc_M.Size = New System.Drawing.Size(84, 22)
@@ -423,9 +451,9 @@ Partial Class Main
         Me.grp_mesh_dragon.Controls.Add(Me.btn_path_dragon_M)
         Me.grp_mesh_dragon.Controls.Add(Me.tbox_path_dragon_M)
         Me.grp_mesh_dragon.Location = New System.Drawing.Point(11, 446)
-        Me.grp_mesh_dragon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_dragon.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_dragon.Name = "grp_mesh_dragon"
-        Me.grp_mesh_dragon.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_dragon.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_dragon.Size = New System.Drawing.Size(167, 92)
         Me.grp_mesh_dragon.TabIndex = 18
         Me.grp_mesh_dragon.TabStop = False
@@ -457,7 +485,7 @@ Partial Class Main
         Me.btn_path_dragon_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_dragon_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_dragon_F.Location = New System.Drawing.Point(93, 55)
-        Me.btn_path_dragon_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_dragon_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_dragon_F.Name = "btn_path_dragon_F"
         Me.btn_path_dragon_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_dragon_F.TabIndex = 13
@@ -469,7 +497,7 @@ Partial Class Main
         Me.tbox_path_dragon_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_dragon_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_dragon_F.Location = New System.Drawing.Point(9, 55)
-        Me.tbox_path_dragon_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_dragon_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_dragon_F.Name = "tbox_path_dragon_F"
         Me.tbox_path_dragon_F.ReadOnly = True
         Me.tbox_path_dragon_F.Size = New System.Drawing.Size(84, 22)
@@ -481,7 +509,7 @@ Partial Class Main
         Me.btn_path_dragon_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_dragon_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_dragon_M.Location = New System.Drawing.Point(93, 23)
-        Me.btn_path_dragon_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_dragon_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_dragon_M.Name = "btn_path_dragon_M"
         Me.btn_path_dragon_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_dragon_M.TabIndex = 11
@@ -493,7 +521,7 @@ Partial Class Main
         Me.tbox_path_dragon_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_dragon_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_dragon_M.Location = New System.Drawing.Point(9, 23)
-        Me.tbox_path_dragon_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_dragon_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_dragon_M.Name = "tbox_path_dragon_M"
         Me.tbox_path_dragon_M.ReadOnly = True
         Me.tbox_path_dragon_M.Size = New System.Drawing.Size(84, 22)
@@ -508,9 +536,9 @@ Partial Class Main
         Me.grp_mesh_gnome.Controls.Add(Me.btn_path_gnome_M)
         Me.grp_mesh_gnome.Controls.Add(Me.tbox_path_gnome_M)
         Me.grp_mesh_gnome.Location = New System.Drawing.Point(208, 353)
-        Me.grp_mesh_gnome.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_gnome.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_gnome.Name = "grp_mesh_gnome"
-        Me.grp_mesh_gnome.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_gnome.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_gnome.Size = New System.Drawing.Size(167, 92)
         Me.grp_mesh_gnome.TabIndex = 16
         Me.grp_mesh_gnome.TabStop = False
@@ -542,7 +570,7 @@ Partial Class Main
         Me.btn_path_gnome_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_gnome_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_gnome_F.Location = New System.Drawing.Point(93, 55)
-        Me.btn_path_gnome_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_gnome_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_gnome_F.Name = "btn_path_gnome_F"
         Me.btn_path_gnome_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_gnome_F.TabIndex = 13
@@ -554,7 +582,7 @@ Partial Class Main
         Me.tbox_path_gnome_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_gnome_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_gnome_F.Location = New System.Drawing.Point(9, 55)
-        Me.tbox_path_gnome_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_gnome_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_gnome_F.Name = "tbox_path_gnome_F"
         Me.tbox_path_gnome_F.ReadOnly = True
         Me.tbox_path_gnome_F.Size = New System.Drawing.Size(84, 22)
@@ -566,7 +594,7 @@ Partial Class Main
         Me.btn_path_gnome_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_gnome_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_gnome_M.Location = New System.Drawing.Point(93, 23)
-        Me.btn_path_gnome_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_gnome_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_gnome_M.Name = "btn_path_gnome_M"
         Me.btn_path_gnome_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_gnome_M.TabIndex = 11
@@ -578,7 +606,7 @@ Partial Class Main
         Me.tbox_path_gnome_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_gnome_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_gnome_M.Location = New System.Drawing.Point(9, 23)
-        Me.tbox_path_gnome_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_gnome_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_gnome_M.Name = "tbox_path_gnome_M"
         Me.tbox_path_gnome_M.ReadOnly = True
         Me.tbox_path_gnome_M.Size = New System.Drawing.Size(84, 22)
@@ -593,9 +621,9 @@ Partial Class Main
         Me.grp_mesh_dwarf.Controls.Add(Me.btn_path_dwarf_M)
         Me.grp_mesh_dwarf.Controls.Add(Me.tbox_path_dwarf_M)
         Me.grp_mesh_dwarf.Location = New System.Drawing.Point(208, 261)
-        Me.grp_mesh_dwarf.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_dwarf.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_dwarf.Name = "grp_mesh_dwarf"
-        Me.grp_mesh_dwarf.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_dwarf.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_dwarf.Size = New System.Drawing.Size(167, 92)
         Me.grp_mesh_dwarf.TabIndex = 17
         Me.grp_mesh_dwarf.TabStop = False
@@ -627,7 +655,7 @@ Partial Class Main
         Me.btn_path_dwarf_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_dwarf_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_dwarf_F.Location = New System.Drawing.Point(93, 55)
-        Me.btn_path_dwarf_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_dwarf_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_dwarf_F.Name = "btn_path_dwarf_F"
         Me.btn_path_dwarf_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_dwarf_F.TabIndex = 13
@@ -639,7 +667,7 @@ Partial Class Main
         Me.tbox_path_dwarf_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_dwarf_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_dwarf_F.Location = New System.Drawing.Point(9, 55)
-        Me.tbox_path_dwarf_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_dwarf_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_dwarf_F.Name = "tbox_path_dwarf_F"
         Me.tbox_path_dwarf_F.ReadOnly = True
         Me.tbox_path_dwarf_F.Size = New System.Drawing.Size(84, 22)
@@ -651,7 +679,7 @@ Partial Class Main
         Me.btn_path_dwarf_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_dwarf_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_dwarf_M.Location = New System.Drawing.Point(93, 23)
-        Me.btn_path_dwarf_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_dwarf_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_dwarf_M.Name = "btn_path_dwarf_M"
         Me.btn_path_dwarf_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_dwarf_M.TabIndex = 11
@@ -663,7 +691,7 @@ Partial Class Main
         Me.tbox_path_dwarf_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_dwarf_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_dwarf_M.Location = New System.Drawing.Point(9, 23)
-        Me.tbox_path_dwarf_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_dwarf_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_dwarf_M.Name = "tbox_path_dwarf_M"
         Me.tbox_path_dwarf_M.ReadOnly = True
         Me.tbox_path_dwarf_M.Size = New System.Drawing.Size(84, 22)
@@ -678,9 +706,9 @@ Partial Class Main
         Me.grp_mesh_gith.Controls.Add(Me.btn_path_gith_M)
         Me.grp_mesh_gith.Controls.Add(Me.tbox_path_gith_M)
         Me.grp_mesh_gith.Location = New System.Drawing.Point(11, 261)
-        Me.grp_mesh_gith.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_gith.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_gith.Name = "grp_mesh_gith"
-        Me.grp_mesh_gith.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_gith.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_gith.Size = New System.Drawing.Size(167, 92)
         Me.grp_mesh_gith.TabIndex = 16
         Me.grp_mesh_gith.TabStop = False
@@ -712,7 +740,7 @@ Partial Class Main
         Me.btn_path_gith_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_gith_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_gith_F.Location = New System.Drawing.Point(93, 55)
-        Me.btn_path_gith_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_gith_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_gith_F.Name = "btn_path_gith_F"
         Me.btn_path_gith_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_gith_F.TabIndex = 13
@@ -724,7 +752,7 @@ Partial Class Main
         Me.tbox_path_gith_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_gith_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_gith_F.Location = New System.Drawing.Point(9, 55)
-        Me.tbox_path_gith_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_gith_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_gith_F.Name = "tbox_path_gith_F"
         Me.tbox_path_gith_F.ReadOnly = True
         Me.tbox_path_gith_F.Size = New System.Drawing.Size(84, 22)
@@ -736,7 +764,7 @@ Partial Class Main
         Me.btn_path_gith_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_gith_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_gith_M.Location = New System.Drawing.Point(93, 23)
-        Me.btn_path_gith_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_gith_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_gith_M.Name = "btn_path_gith_M"
         Me.btn_path_gith_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_gith_M.TabIndex = 11
@@ -748,7 +776,7 @@ Partial Class Main
         Me.tbox_path_gith_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_gith_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_gith_M.Location = New System.Drawing.Point(9, 23)
-        Me.tbox_path_gith_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_gith_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_gith_M.Name = "tbox_path_gith_M"
         Me.tbox_path_gith_M.ReadOnly = True
         Me.tbox_path_gith_M.Size = New System.Drawing.Size(84, 22)
@@ -769,9 +797,9 @@ Partial Class Main
         Me.grp_mesh_tiefling.Controls.Add(Me.btn_path_tief_M)
         Me.grp_mesh_tiefling.Controls.Add(Me.tbox_path_tif_M)
         Me.grp_mesh_tiefling.Location = New System.Drawing.Point(11, 170)
-        Me.grp_mesh_tiefling.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_tiefling.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_tiefling.Name = "grp_mesh_tiefling"
-        Me.grp_mesh_tiefling.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_tiefling.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_tiefling.Size = New System.Drawing.Size(364, 91)
         Me.grp_mesh_tiefling.TabIndex = 12
         Me.grp_mesh_tiefling.TabStop = False
@@ -823,7 +851,7 @@ Partial Class Main
         Me.btn_path_tief_FS.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_tief_FS.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_tief_FS.Location = New System.Drawing.Point(276, 57)
-        Me.btn_path_tief_FS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_tief_FS.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_tief_FS.Name = "btn_path_tief_FS"
         Me.btn_path_tief_FS.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_tief_FS.TabIndex = 7
@@ -835,7 +863,7 @@ Partial Class Main
         Me.tbox_path_tif_FS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_tif_FS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_tif_FS.Location = New System.Drawing.Point(192, 57)
-        Me.tbox_path_tif_FS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_tif_FS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_tif_FS.Name = "tbox_path_tif_FS"
         Me.tbox_path_tif_FS.ReadOnly = True
         Me.tbox_path_tif_FS.Size = New System.Drawing.Size(84, 22)
@@ -847,7 +875,7 @@ Partial Class Main
         Me.btn_path_tief_MS.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_tief_MS.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_tief_MS.Location = New System.Drawing.Point(276, 26)
-        Me.btn_path_tief_MS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_tief_MS.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_tief_MS.Name = "btn_path_tief_MS"
         Me.btn_path_tief_MS.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_tief_MS.TabIndex = 5
@@ -859,7 +887,7 @@ Partial Class Main
         Me.tbox_path_tif_MS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_tif_MS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_tif_MS.Location = New System.Drawing.Point(192, 26)
-        Me.tbox_path_tif_MS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_tif_MS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_tif_MS.Name = "tbox_path_tif_MS"
         Me.tbox_path_tif_MS.ReadOnly = True
         Me.tbox_path_tif_MS.Size = New System.Drawing.Size(84, 22)
@@ -871,7 +899,7 @@ Partial Class Main
         Me.btn_path_tief_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_tief_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_tief_F.Location = New System.Drawing.Point(93, 57)
-        Me.btn_path_tief_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_tief_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_tief_F.Name = "btn_path_tief_F"
         Me.btn_path_tief_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_tief_F.TabIndex = 3
@@ -883,7 +911,7 @@ Partial Class Main
         Me.tbox_path_tif_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_tif_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_tif_F.Location = New System.Drawing.Point(9, 57)
-        Me.tbox_path_tif_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_tif_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_tif_F.Name = "tbox_path_tif_F"
         Me.tbox_path_tif_F.ReadOnly = True
         Me.tbox_path_tif_F.Size = New System.Drawing.Size(84, 22)
@@ -895,7 +923,7 @@ Partial Class Main
         Me.btn_path_tief_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_tief_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_tief_M.Location = New System.Drawing.Point(93, 25)
-        Me.btn_path_tief_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_tief_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_tief_M.Name = "btn_path_tief_M"
         Me.btn_path_tief_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_tief_M.TabIndex = 1
@@ -907,7 +935,7 @@ Partial Class Main
         Me.tbox_path_tif_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_tif_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_tif_M.Location = New System.Drawing.Point(9, 25)
-        Me.tbox_path_tif_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_tif_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_tif_M.Name = "tbox_path_tif_M"
         Me.tbox_path_tif_M.ReadOnly = True
         Me.tbox_path_tif_M.Size = New System.Drawing.Size(84, 22)
@@ -922,9 +950,9 @@ Partial Class Main
         Me.grp_mesh_halfling.Controls.Add(Me.btn_path_half_M)
         Me.grp_mesh_halfling.Controls.Add(Me.tbox_path_half_M)
         Me.grp_mesh_halfling.Location = New System.Drawing.Point(11, 353)
-        Me.grp_mesh_halfling.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_halfling.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_halfling.Name = "grp_mesh_halfling"
-        Me.grp_mesh_halfling.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_halfling.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_halfling.Size = New System.Drawing.Size(167, 92)
         Me.grp_mesh_halfling.TabIndex = 3
         Me.grp_mesh_halfling.TabStop = False
@@ -956,7 +984,7 @@ Partial Class Main
         Me.btn_path_half_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_half_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_half_F.Location = New System.Drawing.Point(93, 55)
-        Me.btn_path_half_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_half_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_half_F.Name = "btn_path_half_F"
         Me.btn_path_half_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_half_F.TabIndex = 13
@@ -968,7 +996,7 @@ Partial Class Main
         Me.tbox_path_half_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_half_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_half_F.Location = New System.Drawing.Point(9, 55)
-        Me.tbox_path_half_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_half_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_half_F.Name = "tbox_path_half_F"
         Me.tbox_path_half_F.ReadOnly = True
         Me.tbox_path_half_F.Size = New System.Drawing.Size(84, 22)
@@ -980,7 +1008,7 @@ Partial Class Main
         Me.btn_path_half_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_half_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_half_M.Location = New System.Drawing.Point(93, 23)
-        Me.btn_path_half_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_half_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_half_M.Name = "btn_path_half_M"
         Me.btn_path_half_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_half_M.TabIndex = 11
@@ -992,7 +1020,7 @@ Partial Class Main
         Me.tbox_path_half_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_half_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_half_M.Location = New System.Drawing.Point(9, 23)
-        Me.tbox_path_half_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_half_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_half_M.Name = "tbox_path_half_M"
         Me.tbox_path_half_M.ReadOnly = True
         Me.tbox_path_half_M.Size = New System.Drawing.Size(84, 22)
@@ -1013,9 +1041,9 @@ Partial Class Main
         Me.grp_mesh_humanoid.Controls.Add(Me.btn_path_humanoid_M)
         Me.grp_mesh_humanoid.Controls.Add(Me.tbox_path_humanoid_M)
         Me.grp_mesh_humanoid.Location = New System.Drawing.Point(11, 79)
-        Me.grp_mesh_humanoid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_humanoid.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_humanoid.Name = "grp_mesh_humanoid"
-        Me.grp_mesh_humanoid.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_mesh_humanoid.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_mesh_humanoid.Size = New System.Drawing.Size(364, 91)
         Me.grp_mesh_humanoid.TabIndex = 0
         Me.grp_mesh_humanoid.TabStop = False
@@ -1067,7 +1095,7 @@ Partial Class Main
         Me.btn_path_humanoid_FS.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_humanoid_FS.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_humanoid_FS.Location = New System.Drawing.Point(276, 57)
-        Me.btn_path_humanoid_FS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_humanoid_FS.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_humanoid_FS.Name = "btn_path_humanoid_FS"
         Me.btn_path_humanoid_FS.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_humanoid_FS.TabIndex = 7
@@ -1079,7 +1107,7 @@ Partial Class Main
         Me.tbox_path_humanoid_FS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_humanoid_FS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_humanoid_FS.Location = New System.Drawing.Point(192, 57)
-        Me.tbox_path_humanoid_FS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_humanoid_FS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_humanoid_FS.Name = "tbox_path_humanoid_FS"
         Me.tbox_path_humanoid_FS.ReadOnly = True
         Me.tbox_path_humanoid_FS.Size = New System.Drawing.Size(84, 22)
@@ -1091,7 +1119,7 @@ Partial Class Main
         Me.btn_path_humanoid_MS.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_humanoid_MS.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_humanoid_MS.Location = New System.Drawing.Point(276, 26)
-        Me.btn_path_humanoid_MS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_humanoid_MS.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_humanoid_MS.Name = "btn_path_humanoid_MS"
         Me.btn_path_humanoid_MS.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_humanoid_MS.TabIndex = 5
@@ -1103,7 +1131,7 @@ Partial Class Main
         Me.tbox_path_humanoid_MS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_humanoid_MS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_humanoid_MS.Location = New System.Drawing.Point(192, 26)
-        Me.tbox_path_humanoid_MS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_humanoid_MS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_humanoid_MS.Name = "tbox_path_humanoid_MS"
         Me.tbox_path_humanoid_MS.ReadOnly = True
         Me.tbox_path_humanoid_MS.Size = New System.Drawing.Size(84, 22)
@@ -1115,7 +1143,7 @@ Partial Class Main
         Me.btn_path_humanoid_F.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_humanoid_F.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_humanoid_F.Location = New System.Drawing.Point(93, 57)
-        Me.btn_path_humanoid_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_humanoid_F.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_humanoid_F.Name = "btn_path_humanoid_F"
         Me.btn_path_humanoid_F.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_humanoid_F.TabIndex = 3
@@ -1127,7 +1155,7 @@ Partial Class Main
         Me.tbox_path_humanoid_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_humanoid_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_humanoid_F.Location = New System.Drawing.Point(9, 57)
-        Me.tbox_path_humanoid_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_humanoid_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_humanoid_F.Name = "tbox_path_humanoid_F"
         Me.tbox_path_humanoid_F.ReadOnly = True
         Me.tbox_path_humanoid_F.Size = New System.Drawing.Size(84, 22)
@@ -1139,7 +1167,7 @@ Partial Class Main
         Me.btn_path_humanoid_M.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_humanoid_M.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_humanoid_M.Location = New System.Drawing.Point(93, 25)
-        Me.btn_path_humanoid_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_humanoid_M.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_humanoid_M.Name = "btn_path_humanoid_M"
         Me.btn_path_humanoid_M.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_humanoid_M.TabIndex = 1
@@ -1151,7 +1179,7 @@ Partial Class Main
         Me.tbox_path_humanoid_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_humanoid_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_humanoid_M.Location = New System.Drawing.Point(9, 25)
-        Me.tbox_path_humanoid_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_humanoid_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_humanoid_M.Name = "tbox_path_humanoid_M"
         Me.tbox_path_humanoid_M.ReadOnly = True
         Me.tbox_path_humanoid_M.Size = New System.Drawing.Size(84, 22)
@@ -1159,6 +1187,8 @@ Partial Class Main
         '
         'grp_textures
         '
+        Me.grp_textures.Controls.Add(Me.lbl_help_autofill_texture_paths)
+        Me.grp_textures.Controls.Add(Me.btn_autofill_texture_paths)
         Me.grp_textures.Controls.Add(Me.lbl_help_texture_prefix)
         Me.grp_textures.Controls.Add(Me.lbl_texture_prefix)
         Me.grp_textures.Controls.Add(Me.tbox_texture_prefix)
@@ -1175,20 +1205,41 @@ Partial Class Main
         Me.grp_textures.Controls.Add(Me.btn_path_PM)
         Me.grp_textures.Controls.Add(Me.tbox_path_PM)
         Me.grp_textures.Location = New System.Drawing.Point(16, 582)
-        Me.grp_textures.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_textures.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_textures.Name = "grp_textures"
-        Me.grp_textures.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_textures.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_textures.Size = New System.Drawing.Size(385, 201)
         Me.grp_textures.TabIndex = 3
         Me.grp_textures.TabStop = False
         Me.grp_textures.Text = "Textures"
+        '
+        'lbl_help_autofill_texture_paths
+        '
+        Me.lbl_help_autofill_texture_paths.AutoSize = True
+        Me.lbl_help_autofill_texture_paths.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_help_autofill_texture_paths.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_help_autofill_texture_paths.Location = New System.Drawing.Point(346, 23)
+        Me.lbl_help_autofill_texture_paths.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_help_autofill_texture_paths.Name = "lbl_help_autofill_texture_paths"
+        Me.lbl_help_autofill_texture_paths.Size = New System.Drawing.Size(17, 17)
+        Me.lbl_help_autofill_texture_paths.TabIndex = 26
+        Me.lbl_help_autofill_texture_paths.Text = "?"
+        '
+        'btn_autofill_texture_paths
+        '
+        Me.btn_autofill_texture_paths.Location = New System.Drawing.Point(234, 40)
+        Me.btn_autofill_texture_paths.Name = "btn_autofill_texture_paths"
+        Me.btn_autofill_texture_paths.Size = New System.Drawing.Size(129, 27)
+        Me.btn_autofill_texture_paths.TabIndex = 25
+        Me.btn_autofill_texture_paths.Text = "Auto-Populate"
+        Me.btn_autofill_texture_paths.UseVisualStyleBackColor = True
         '
         'lbl_help_texture_prefix
         '
         Me.lbl_help_texture_prefix.AutoSize = True
         Me.lbl_help_texture_prefix.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_help_texture_prefix.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_help_texture_prefix.Location = New System.Drawing.Point(323, 23)
+        Me.lbl_help_texture_prefix.Location = New System.Drawing.Point(196, 23)
         Me.lbl_help_texture_prefix.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_help_texture_prefix.Name = "lbl_help_texture_prefix"
         Me.lbl_help_texture_prefix.Size = New System.Drawing.Size(17, 17)
@@ -1208,9 +1259,9 @@ Partial Class Main
         'tbox_texture_prefix
         '
         Me.tbox_texture_prefix.Location = New System.Drawing.Point(16, 43)
-        Me.tbox_texture_prefix.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_texture_prefix.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_texture_prefix.Name = "tbox_texture_prefix"
-        Me.tbox_texture_prefix.Size = New System.Drawing.Size(324, 22)
+        Me.tbox_texture_prefix.Size = New System.Drawing.Size(197, 22)
         Me.tbox_texture_prefix.TabIndex = 18
         '
         'lbl_path_MSK
@@ -1229,7 +1280,7 @@ Partial Class Main
         Me.btn_path_MSK.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_MSK.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_MSK.Location = New System.Drawing.Point(297, 154)
-        Me.btn_path_MSK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_MSK.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_MSK.Name = "btn_path_MSK"
         Me.btn_path_MSK.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_MSK.TabIndex = 16
@@ -1241,7 +1292,7 @@ Partial Class Main
         Me.tbox_path_MSK.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_MSK.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_MSK.Location = New System.Drawing.Point(213, 154)
-        Me.tbox_path_MSK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_MSK.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_MSK.Name = "tbox_path_MSK"
         Me.tbox_path_MSK.ReadOnly = True
         Me.tbox_path_MSK.Size = New System.Drawing.Size(84, 22)
@@ -1263,7 +1314,7 @@ Partial Class Main
         Me.btn_path_NM.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_NM.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_NM.Location = New System.Drawing.Point(100, 154)
-        Me.btn_path_NM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_NM.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_NM.Name = "btn_path_NM"
         Me.btn_path_NM.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_NM.TabIndex = 13
@@ -1275,7 +1326,7 @@ Partial Class Main
         Me.tbox_path_NM.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_NM.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_NM.Location = New System.Drawing.Point(16, 154)
-        Me.tbox_path_NM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_NM.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_NM.Name = "tbox_path_NM"
         Me.tbox_path_NM.ReadOnly = True
         Me.tbox_path_NM.Size = New System.Drawing.Size(84, 22)
@@ -1307,7 +1358,7 @@ Partial Class Main
         Me.btn_path_BM.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_BM.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_BM.Location = New System.Drawing.Point(297, 106)
-        Me.btn_path_BM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_BM.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_BM.Name = "btn_path_BM"
         Me.btn_path_BM.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_BM.TabIndex = 5
@@ -1319,7 +1370,7 @@ Partial Class Main
         Me.tbox_path_BM.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_BM.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_BM.Location = New System.Drawing.Point(213, 106)
-        Me.tbox_path_BM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_BM.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_BM.Name = "tbox_path_BM"
         Me.tbox_path_BM.ReadOnly = True
         Me.tbox_path_BM.Size = New System.Drawing.Size(84, 22)
@@ -1331,7 +1382,7 @@ Partial Class Main
         Me.btn_path_PM.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_path_PM.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btn_path_PM.Location = New System.Drawing.Point(100, 106)
-        Me.btn_path_PM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_path_PM.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_path_PM.Name = "btn_path_PM"
         Me.btn_path_PM.Size = New System.Drawing.Size(44, 25)
         Me.btn_path_PM.TabIndex = 3
@@ -1343,7 +1394,7 @@ Partial Class Main
         Me.tbox_path_PM.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_path_PM.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_path_PM.Location = New System.Drawing.Point(16, 106)
-        Me.tbox_path_PM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_path_PM.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_path_PM.Name = "tbox_path_PM"
         Me.tbox_path_PM.ReadOnly = True
         Me.tbox_path_PM.Size = New System.Drawing.Size(84, 22)
@@ -1357,9 +1408,9 @@ Partial Class Main
         Me.grp_UUIDs.Controls.Add(Me.btn_gen_meshUUID)
         Me.grp_UUIDs.Controls.Add(Me.btn_gen_textureUUID)
         Me.grp_UUIDs.Location = New System.Drawing.Point(409, 33)
-        Me.grp_UUIDs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_UUIDs.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_UUIDs.Name = "grp_UUIDs"
-        Me.grp_UUIDs.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_UUIDs.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_UUIDs.Size = New System.Drawing.Size(640, 446)
         Me.grp_UUIDs.TabIndex = 4
         Me.grp_UUIDs.TabStop = False
@@ -1371,7 +1422,7 @@ Partial Class Main
         Me.btn_gen_allUUID.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_gen_allUUID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_gen_allUUID.Location = New System.Drawing.Point(319, 316)
-        Me.btn_gen_allUUID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_gen_allUUID.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_gen_allUUID.Name = "btn_gen_allUUID"
         Me.btn_gen_allUUID.Size = New System.Drawing.Size(305, 112)
         Me.btn_gen_allUUID.TabIndex = 57
@@ -1391,9 +1442,9 @@ Partial Class Main
         Me.grp_textureUUIDs.Controls.Add(Me.lbl_UUID_material)
         Me.grp_textureUUIDs.Controls.Add(Me.tbox_UUID_material)
         Me.grp_textureUUIDs.Location = New System.Drawing.Point(319, 16)
-        Me.grp_textureUUIDs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_textureUUIDs.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_textureUUIDs.Name = "grp_textureUUIDs"
-        Me.grp_textureUUIDs.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_textureUUIDs.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_textureUUIDs.Size = New System.Drawing.Size(305, 198)
         Me.grp_textureUUIDs.TabIndex = 53
         Me.grp_textureUUIDs.TabStop = False
@@ -1414,7 +1465,7 @@ Partial Class Main
         Me.tbox_UUID_MSK.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_MSK.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_MSK.Location = New System.Drawing.Point(17, 155)
-        Me.tbox_UUID_MSK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_MSK.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_MSK.Name = "tbox_UUID_MSK"
         Me.tbox_UUID_MSK.ReadOnly = True
         Me.tbox_UUID_MSK.Size = New System.Drawing.Size(124, 22)
@@ -1435,7 +1486,7 @@ Partial Class Main
         Me.tbox_UUID_NM.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_NM.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_NM.Location = New System.Drawing.Point(161, 101)
-        Me.tbox_UUID_NM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_NM.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_NM.Name = "tbox_UUID_NM"
         Me.tbox_UUID_NM.ReadOnly = True
         Me.tbox_UUID_NM.Size = New System.Drawing.Size(124, 22)
@@ -1456,7 +1507,7 @@ Partial Class Main
         Me.tbox_UUID_BM.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_BM.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_BM.Location = New System.Drawing.Point(16, 101)
-        Me.tbox_UUID_BM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_BM.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_BM.Name = "tbox_UUID_BM"
         Me.tbox_UUID_BM.ReadOnly = True
         Me.tbox_UUID_BM.Size = New System.Drawing.Size(124, 22)
@@ -1477,7 +1528,7 @@ Partial Class Main
         Me.tbox_UUID_PM.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_PM.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_PM.Location = New System.Drawing.Point(161, 48)
-        Me.tbox_UUID_PM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_PM.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_PM.Name = "tbox_UUID_PM"
         Me.tbox_UUID_PM.ReadOnly = True
         Me.tbox_UUID_PM.Size = New System.Drawing.Size(124, 22)
@@ -1498,7 +1549,7 @@ Partial Class Main
         Me.tbox_UUID_material.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_material.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_material.Location = New System.Drawing.Point(19, 48)
-        Me.tbox_UUID_material.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_material.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_material.Name = "tbox_UUID_material"
         Me.tbox_UUID_material.ReadOnly = True
         Me.tbox_UUID_material.Size = New System.Drawing.Size(124, 22)
@@ -1515,9 +1566,9 @@ Partial Class Main
         Me.grp_meshUUIDs.Controls.Add(Me.grp_meshUUIDs_gith)
         Me.grp_meshUUIDs.Controls.Add(Me.grp_meshUUIDs_humanoid)
         Me.grp_meshUUIDs.Location = New System.Drawing.Point(8, 23)
-        Me.grp_meshUUIDs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs.Name = "grp_meshUUIDs"
-        Me.grp_meshUUIDs.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs.Size = New System.Drawing.Size(303, 405)
         Me.grp_meshUUIDs.TabIndex = 0
         Me.grp_meshUUIDs.TabStop = False
@@ -1530,9 +1581,9 @@ Partial Class Main
         Me.grp_meshUUIDs_orc.Controls.Add(Me.tbox_UUID_orc_F)
         Me.grp_meshUUIDs_orc.Controls.Add(Me.lbl_UUID_orc_F)
         Me.grp_meshUUIDs_orc.Location = New System.Drawing.Point(156, 313)
-        Me.grp_meshUUIDs_orc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_orc.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_orc.Name = "grp_meshUUIDs_orc"
-        Me.grp_meshUUIDs_orc.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_orc.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_orc.Size = New System.Drawing.Size(140, 75)
         Me.grp_meshUUIDs_orc.TabIndex = 51
         Me.grp_meshUUIDs_orc.TabStop = False
@@ -1553,7 +1604,7 @@ Partial Class Main
         Me.tbox_UUID_orc_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_orc_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_orc_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_orc_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_orc_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_orc_M.Name = "tbox_UUID_orc_M"
         Me.tbox_UUID_orc_M.ReadOnly = True
         Me.tbox_UUID_orc_M.Size = New System.Drawing.Size(57, 22)
@@ -1564,7 +1615,7 @@ Partial Class Main
         Me.tbox_UUID_orc_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_orc_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_orc_F.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_orc_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_orc_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_orc_F.Name = "tbox_UUID_orc_F"
         Me.tbox_UUID_orc_F.ReadOnly = True
         Me.tbox_UUID_orc_F.Size = New System.Drawing.Size(57, 22)
@@ -1587,9 +1638,9 @@ Partial Class Main
         Me.grp_meshUUIDs_half.Controls.Add(Me.tbox_UUID_hlf_F)
         Me.grp_meshUUIDs_half.Controls.Add(Me.lbl_UUID_hlf_F)
         Me.grp_meshUUIDs_half.Location = New System.Drawing.Point(8, 230)
-        Me.grp_meshUUIDs_half.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_half.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_half.Name = "grp_meshUUIDs_half"
-        Me.grp_meshUUIDs_half.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_half.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_half.Size = New System.Drawing.Size(140, 75)
         Me.grp_meshUUIDs_half.TabIndex = 48
         Me.grp_meshUUIDs_half.TabStop = False
@@ -1610,7 +1661,7 @@ Partial Class Main
         Me.tbox_UUID_hlf_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_hlf_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_hlf_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_hlf_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_hlf_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_hlf_M.Name = "tbox_UUID_hlf_M"
         Me.tbox_UUID_hlf_M.ReadOnly = True
         Me.tbox_UUID_hlf_M.Size = New System.Drawing.Size(57, 22)
@@ -1621,7 +1672,7 @@ Partial Class Main
         Me.tbox_UUID_hlf_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_hlf_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_hlf_F.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_hlf_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_hlf_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_hlf_F.Name = "tbox_UUID_hlf_F"
         Me.tbox_UUID_hlf_F.ReadOnly = True
         Me.tbox_UUID_hlf_F.Size = New System.Drawing.Size(57, 22)
@@ -1644,9 +1695,9 @@ Partial Class Main
         Me.grp_meshUUIDs_dragon.Controls.Add(Me.tbox_UUID_dgb_F)
         Me.grp_meshUUIDs_dragon.Controls.Add(Me.lbl_UUID_dgb_F)
         Me.grp_meshUUIDs_dragon.Location = New System.Drawing.Point(8, 313)
-        Me.grp_meshUUIDs_dragon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_dragon.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_dragon.Name = "grp_meshUUIDs_dragon"
-        Me.grp_meshUUIDs_dragon.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_dragon.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_dragon.Size = New System.Drawing.Size(140, 75)
         Me.grp_meshUUIDs_dragon.TabIndex = 50
         Me.grp_meshUUIDs_dragon.TabStop = False
@@ -1667,7 +1718,7 @@ Partial Class Main
         Me.tbox_UUID_dgb_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_dgb_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_dgb_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_dgb_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_dgb_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_dgb_M.Name = "tbox_UUID_dgb_M"
         Me.tbox_UUID_dgb_M.ReadOnly = True
         Me.tbox_UUID_dgb_M.Size = New System.Drawing.Size(57, 22)
@@ -1678,7 +1729,7 @@ Partial Class Main
         Me.tbox_UUID_dgb_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_dgb_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_dgb_F.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_dgb_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_dgb_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_dgb_F.Name = "tbox_UUID_dgb_F"
         Me.tbox_UUID_dgb_F.ReadOnly = True
         Me.tbox_UUID_dgb_F.Size = New System.Drawing.Size(57, 22)
@@ -1705,9 +1756,9 @@ Partial Class Main
         Me.grp_meshUUIDs_tief.Controls.Add(Me.tbox_UUID_tif_MS)
         Me.grp_meshUUIDs_tief.Controls.Add(Me.lbl_UUID_tif_MS)
         Me.grp_meshUUIDs_tief.Location = New System.Drawing.Point(156, 23)
-        Me.grp_meshUUIDs_tief.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_tief.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_tief.Name = "grp_meshUUIDs_tief"
-        Me.grp_meshUUIDs_tief.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_tief.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_tief.Size = New System.Drawing.Size(140, 119)
         Me.grp_meshUUIDs_tief.TabIndex = 45
         Me.grp_meshUUIDs_tief.TabStop = False
@@ -1748,7 +1799,7 @@ Partial Class Main
         Me.tbox_UUID_tif_FS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_tif_FS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_tif_FS.Location = New System.Drawing.Point(75, 87)
-        Me.tbox_UUID_tif_FS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_tif_FS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_tif_FS.Name = "tbox_UUID_tif_FS"
         Me.tbox_UUID_tif_FS.ReadOnly = True
         Me.tbox_UUID_tif_FS.Size = New System.Drawing.Size(57, 22)
@@ -1759,7 +1810,7 @@ Partial Class Main
         Me.tbox_UUID_tif_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_tif_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_tif_F.Location = New System.Drawing.Point(8, 87)
-        Me.tbox_UUID_tif_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_tif_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_tif_F.Name = "tbox_UUID_tif_F"
         Me.tbox_UUID_tif_F.ReadOnly = True
         Me.tbox_UUID_tif_F.Size = New System.Drawing.Size(57, 22)
@@ -1770,7 +1821,7 @@ Partial Class Main
         Me.tbox_UUID_tif_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_tif_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_tif_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_tif_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_tif_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_tif_M.Name = "tbox_UUID_tif_M"
         Me.tbox_UUID_tif_M.ReadOnly = True
         Me.tbox_UUID_tif_M.Size = New System.Drawing.Size(57, 22)
@@ -1781,7 +1832,7 @@ Partial Class Main
         Me.tbox_UUID_tif_MS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_tif_MS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_tif_MS.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_tif_MS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_tif_MS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_tif_MS.Name = "tbox_UUID_tif_MS"
         Me.tbox_UUID_tif_MS.ReadOnly = True
         Me.tbox_UUID_tif_MS.Size = New System.Drawing.Size(57, 22)
@@ -1804,9 +1855,9 @@ Partial Class Main
         Me.grp_meshUUIDs_gnome.Controls.Add(Me.tbox_UUID_gnm_F)
         Me.grp_meshUUIDs_gnome.Controls.Add(Me.lbl_UUID_gnm_F)
         Me.grp_meshUUIDs_gnome.Location = New System.Drawing.Point(156, 230)
-        Me.grp_meshUUIDs_gnome.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_gnome.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_gnome.Name = "grp_meshUUIDs_gnome"
-        Me.grp_meshUUIDs_gnome.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_gnome.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_gnome.Size = New System.Drawing.Size(140, 75)
         Me.grp_meshUUIDs_gnome.TabIndex = 49
         Me.grp_meshUUIDs_gnome.TabStop = False
@@ -1827,7 +1878,7 @@ Partial Class Main
         Me.tbox_UUID_gnm_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_gnm_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_gnm_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_gnm_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_gnm_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_gnm_M.Name = "tbox_UUID_gnm_M"
         Me.tbox_UUID_gnm_M.ReadOnly = True
         Me.tbox_UUID_gnm_M.Size = New System.Drawing.Size(57, 22)
@@ -1838,7 +1889,7 @@ Partial Class Main
         Me.tbox_UUID_gnm_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_gnm_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_gnm_F.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_gnm_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_gnm_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_gnm_F.Name = "tbox_UUID_gnm_F"
         Me.tbox_UUID_gnm_F.ReadOnly = True
         Me.tbox_UUID_gnm_F.Size = New System.Drawing.Size(57, 22)
@@ -1861,9 +1912,9 @@ Partial Class Main
         Me.grp_meshUUIDs_dwarf.Controls.Add(Me.tbox_UUID_dwr_F)
         Me.grp_meshUUIDs_dwarf.Controls.Add(Me.lbl_UUID_dwr_F)
         Me.grp_meshUUIDs_dwarf.Location = New System.Drawing.Point(156, 148)
-        Me.grp_meshUUIDs_dwarf.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_dwarf.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_dwarf.Name = "grp_meshUUIDs_dwarf"
-        Me.grp_meshUUIDs_dwarf.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_dwarf.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_dwarf.Size = New System.Drawing.Size(140, 75)
         Me.grp_meshUUIDs_dwarf.TabIndex = 47
         Me.grp_meshUUIDs_dwarf.TabStop = False
@@ -1884,7 +1935,7 @@ Partial Class Main
         Me.tbox_UUID_dwr_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_dwr_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_dwr_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_dwr_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_dwr_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_dwr_M.Name = "tbox_UUID_dwr_M"
         Me.tbox_UUID_dwr_M.ReadOnly = True
         Me.tbox_UUID_dwr_M.Size = New System.Drawing.Size(57, 22)
@@ -1895,7 +1946,7 @@ Partial Class Main
         Me.tbox_UUID_dwr_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_dwr_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_dwr_F.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_dwr_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_dwr_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_dwr_F.Name = "tbox_UUID_dwr_F"
         Me.tbox_UUID_dwr_F.ReadOnly = True
         Me.tbox_UUID_dwr_F.Size = New System.Drawing.Size(57, 22)
@@ -1918,9 +1969,9 @@ Partial Class Main
         Me.grp_meshUUIDs_gith.Controls.Add(Me.tbox_UUID_git_F)
         Me.grp_meshUUIDs_gith.Controls.Add(Me.lbl_UUID_git_F)
         Me.grp_meshUUIDs_gith.Location = New System.Drawing.Point(8, 148)
-        Me.grp_meshUUIDs_gith.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_gith.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_gith.Name = "grp_meshUUIDs_gith"
-        Me.grp_meshUUIDs_gith.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_gith.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_gith.Size = New System.Drawing.Size(140, 75)
         Me.grp_meshUUIDs_gith.TabIndex = 46
         Me.grp_meshUUIDs_gith.TabStop = False
@@ -1941,7 +1992,7 @@ Partial Class Main
         Me.tbox_UUID_git_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_git_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_git_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_git_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_git_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_git_M.Name = "tbox_UUID_git_M"
         Me.tbox_UUID_git_M.ReadOnly = True
         Me.tbox_UUID_git_M.Size = New System.Drawing.Size(57, 22)
@@ -1952,7 +2003,7 @@ Partial Class Main
         Me.tbox_UUID_git_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_git_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_git_F.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_git_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_git_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_git_F.Name = "tbox_UUID_git_F"
         Me.tbox_UUID_git_F.ReadOnly = True
         Me.tbox_UUID_git_F.Size = New System.Drawing.Size(57, 22)
@@ -1979,9 +2030,9 @@ Partial Class Main
         Me.grp_meshUUIDs_humanoid.Controls.Add(Me.tbox_UUID_hum_MS)
         Me.grp_meshUUIDs_humanoid.Controls.Add(Me.lbl_UUID_hum_MS)
         Me.grp_meshUUIDs_humanoid.Location = New System.Drawing.Point(8, 23)
-        Me.grp_meshUUIDs_humanoid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_humanoid.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_humanoid.Name = "grp_meshUUIDs_humanoid"
-        Me.grp_meshUUIDs_humanoid.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_meshUUIDs_humanoid.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_meshUUIDs_humanoid.Size = New System.Drawing.Size(140, 119)
         Me.grp_meshUUIDs_humanoid.TabIndex = 0
         Me.grp_meshUUIDs_humanoid.TabStop = False
@@ -2022,7 +2073,7 @@ Partial Class Main
         Me.tbox_UUID_hum_FS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_hum_FS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_hum_FS.Location = New System.Drawing.Point(75, 87)
-        Me.tbox_UUID_hum_FS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_hum_FS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_hum_FS.Name = "tbox_UUID_hum_FS"
         Me.tbox_UUID_hum_FS.ReadOnly = True
         Me.tbox_UUID_hum_FS.Size = New System.Drawing.Size(57, 22)
@@ -2033,7 +2084,7 @@ Partial Class Main
         Me.tbox_UUID_hum_F.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_hum_F.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_hum_F.Location = New System.Drawing.Point(8, 87)
-        Me.tbox_UUID_hum_F.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_hum_F.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_hum_F.Name = "tbox_UUID_hum_F"
         Me.tbox_UUID_hum_F.ReadOnly = True
         Me.tbox_UUID_hum_F.Size = New System.Drawing.Size(57, 22)
@@ -2044,7 +2095,7 @@ Partial Class Main
         Me.tbox_UUID_hum_M.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_hum_M.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_hum_M.Location = New System.Drawing.Point(8, 39)
-        Me.tbox_UUID_hum_M.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_hum_M.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_hum_M.Name = "tbox_UUID_hum_M"
         Me.tbox_UUID_hum_M.ReadOnly = True
         Me.tbox_UUID_hum_M.Size = New System.Drawing.Size(57, 22)
@@ -2055,7 +2106,7 @@ Partial Class Main
         Me.tbox_UUID_hum_MS.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_UUID_hum_MS.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_UUID_hum_MS.Location = New System.Drawing.Point(75, 39)
-        Me.tbox_UUID_hum_MS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_UUID_hum_MS.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_UUID_hum_MS.Name = "tbox_UUID_hum_MS"
         Me.tbox_UUID_hum_MS.ReadOnly = True
         Me.tbox_UUID_hum_MS.Size = New System.Drawing.Size(57, 22)
@@ -2077,7 +2128,7 @@ Partial Class Main
         Me.btn_gen_meshUUID.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_gen_meshUUID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_gen_meshUUID.Location = New System.Drawing.Point(319, 222)
-        Me.btn_gen_meshUUID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_gen_meshUUID.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_gen_meshUUID.Name = "btn_gen_meshUUID"
         Me.btn_gen_meshUUID.Size = New System.Drawing.Size(144, 82)
         Me.btn_gen_meshUUID.TabIndex = 54
@@ -2090,7 +2141,7 @@ Partial Class Main
         Me.btn_gen_textureUUID.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_gen_textureUUID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_gen_textureUUID.Location = New System.Drawing.Point(472, 222)
-        Me.btn_gen_textureUUID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_gen_textureUUID.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_gen_textureUUID.Name = "btn_gen_textureUUID"
         Me.btn_gen_textureUUID.Size = New System.Drawing.Size(152, 82)
         Me.btn_gen_textureUUID.TabIndex = 56
@@ -2106,9 +2157,9 @@ Partial Class Main
         Me.grp_loca.Controls.Add(Me.lbl_displayed_name)
         Me.grp_loca.Controls.Add(Me.tbox_displayed_name)
         Me.grp_loca.Location = New System.Drawing.Point(409, 486)
-        Me.grp_loca.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_loca.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_loca.Name = "grp_loca"
-        Me.grp_loca.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_loca.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_loca.Size = New System.Drawing.Size(640, 126)
         Me.grp_loca.TabIndex = 54
         Me.grp_loca.TabStop = False
@@ -2132,7 +2183,7 @@ Partial Class Main
         Me.btn_gen_handle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_gen_handle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_gen_handle.Location = New System.Drawing.Point(20, 74)
-        Me.btn_gen_handle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_gen_handle.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_gen_handle.Name = "btn_gen_handle"
         Me.btn_gen_handle.Size = New System.Drawing.Size(604, 41)
         Me.btn_gen_handle.TabIndex = 55
@@ -2154,7 +2205,7 @@ Partial Class Main
         Me.tbox_namehandle.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_namehandle.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_namehandle.Location = New System.Drawing.Point(367, 42)
-        Me.tbox_namehandle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_namehandle.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_namehandle.Name = "tbox_namehandle"
         Me.tbox_namehandle.ReadOnly = True
         Me.tbox_namehandle.Size = New System.Drawing.Size(256, 22)
@@ -2174,7 +2225,7 @@ Partial Class Main
         '
         Me.tbox_displayed_name.BackColor = System.Drawing.SystemColors.Window
         Me.tbox_displayed_name.Location = New System.Drawing.Point(20, 42)
-        Me.tbox_displayed_name.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_displayed_name.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_displayed_name.Name = "tbox_displayed_name"
         Me.tbox_displayed_name.Size = New System.Drawing.Size(332, 22)
         Me.tbox_displayed_name.TabIndex = 24
@@ -2185,7 +2236,7 @@ Partial Class Main
         Me.btn_gen_snippets.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_gen_snippets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_gen_snippets.Location = New System.Drawing.Point(112, 38)
-        Me.btn_gen_snippets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_gen_snippets.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_gen_snippets.Name = "btn_gen_snippets"
         Me.btn_gen_snippets.Size = New System.Drawing.Size(156, 100)
         Me.btn_gen_snippets.TabIndex = 55
@@ -2196,7 +2247,7 @@ Partial Class Main
         '
         Me.cbox_merged.AutoSize = True
         Me.cbox_merged.Location = New System.Drawing.Point(15, 44)
-        Me.cbox_merged.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbox_merged.Margin = New System.Windows.Forms.Padding(4)
         Me.cbox_merged.Name = "cbox_merged"
         Me.cbox_merged.Size = New System.Drawing.Size(83, 20)
         Me.cbox_merged.TabIndex = 56
@@ -2207,7 +2258,7 @@ Partial Class Main
         '
         Me.cbox_CCAV.AutoSize = True
         Me.cbox_CCAV.Location = New System.Drawing.Point(15, 78)
-        Me.cbox_CCAV.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbox_CCAV.Margin = New System.Windows.Forms.Padding(4)
         Me.cbox_CCAV.Name = "cbox_CCAV"
         Me.cbox_CCAV.Size = New System.Drawing.Size(65, 20)
         Me.cbox_CCAV.TabIndex = 57
@@ -2218,7 +2269,7 @@ Partial Class Main
         '
         Me.cbox_loca.AutoSize = True
         Me.cbox_loca.Location = New System.Drawing.Point(15, 112)
-        Me.cbox_loca.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbox_loca.Margin = New System.Windows.Forms.Padding(4)
         Me.cbox_loca.Name = "cbox_loca"
         Me.cbox_loca.Size = New System.Drawing.Size(58, 20)
         Me.cbox_loca.TabIndex = 58
@@ -2232,9 +2283,9 @@ Partial Class Main
         Me.grp_generate.Controls.Add(Me.cbox_merged)
         Me.grp_generate.Controls.Add(Me.cbox_CCAV)
         Me.grp_generate.Location = New System.Drawing.Point(767, 619)
-        Me.grp_generate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_generate.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_generate.Name = "grp_generate"
-        Me.grp_generate.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_generate.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_generate.Size = New System.Drawing.Size(283, 164)
         Me.grp_generate.TabIndex = 59
         Me.grp_generate.TabStop = False
@@ -2248,9 +2299,9 @@ Partial Class Main
         Me.grp_clear.Controls.Add(Me.btn_clear_texturepath)
         Me.grp_clear.Controls.Add(Me.btn_clear_meshpath)
         Me.grp_clear.Location = New System.Drawing.Point(409, 619)
-        Me.grp_clear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_clear.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_clear.Name = "grp_clear"
-        Me.grp_clear.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_clear.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_clear.Size = New System.Drawing.Size(349, 164)
         Me.grp_clear.TabIndex = 60
         Me.grp_clear.TabStop = False
@@ -2262,7 +2313,7 @@ Partial Class Main
         Me.btn_clear_all.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_clear_all.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clear_all.Location = New System.Drawing.Point(15, 117)
-        Me.btn_clear_all.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_clear_all.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_clear_all.Name = "btn_clear_all"
         Me.btn_clear_all.Size = New System.Drawing.Size(320, 32)
         Me.btn_clear_all.TabIndex = 63
@@ -2275,7 +2326,7 @@ Partial Class Main
         Me.btn_clear_textureUUID.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_clear_textureUUID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clear_textureUUID.Location = New System.Drawing.Point(179, 73)
-        Me.btn_clear_textureUUID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_clear_textureUUID.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_clear_textureUUID.Name = "btn_clear_textureUUID"
         Me.btn_clear_textureUUID.Size = New System.Drawing.Size(156, 37)
         Me.btn_clear_textureUUID.TabIndex = 61
@@ -2288,7 +2339,7 @@ Partial Class Main
         Me.btn_clear_meshUUID.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_clear_meshUUID.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clear_meshUUID.Location = New System.Drawing.Point(15, 73)
-        Me.btn_clear_meshUUID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_clear_meshUUID.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_clear_meshUUID.Name = "btn_clear_meshUUID"
         Me.btn_clear_meshUUID.Size = New System.Drawing.Size(156, 37)
         Me.btn_clear_meshUUID.TabIndex = 59
@@ -2301,7 +2352,7 @@ Partial Class Main
         Me.btn_clear_texturepath.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_clear_texturepath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clear_texturepath.Location = New System.Drawing.Point(179, 28)
-        Me.btn_clear_texturepath.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_clear_texturepath.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_clear_texturepath.Name = "btn_clear_texturepath"
         Me.btn_clear_texturepath.Size = New System.Drawing.Size(156, 37)
         Me.btn_clear_texturepath.TabIndex = 58
@@ -2314,7 +2365,7 @@ Partial Class Main
         Me.btn_clear_meshpath.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_clear_meshpath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clear_meshpath.Location = New System.Drawing.Point(15, 28)
-        Me.btn_clear_meshpath.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_clear_meshpath.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_clear_meshpath.Name = "btn_clear_meshpath"
         Me.btn_clear_meshpath.Size = New System.Drawing.Size(156, 37)
         Me.btn_clear_meshpath.TabIndex = 57
@@ -2335,9 +2386,9 @@ Partial Class Main
         Me.grp_snippets.Controls.Add(Me.lbl_snippet_merged_material)
         Me.grp_snippets.Controls.Add(Me.tbox_output_mergedMaterial)
         Me.grp_snippets.Location = New System.Drawing.Point(1057, 33)
-        Me.grp_snippets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_snippets.Margin = New System.Windows.Forms.Padding(4)
         Me.grp_snippets.Name = "grp_snippets"
-        Me.grp_snippets.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grp_snippets.Padding = New System.Windows.Forms.Padding(4)
         Me.grp_snippets.Size = New System.Drawing.Size(368, 750)
         Me.grp_snippets.TabIndex = 61
         Me.grp_snippets.TabStop = False
@@ -2349,7 +2400,7 @@ Partial Class Main
         Me.btn_clear_snippets.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_clear_snippets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clear_snippets.Location = New System.Drawing.Point(87, 689)
-        Me.btn_clear_snippets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_clear_snippets.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_clear_snippets.Name = "btn_clear_snippets"
         Me.btn_clear_snippets.Size = New System.Drawing.Size(215, 46)
         Me.btn_clear_snippets.TabIndex = 55
@@ -2371,7 +2422,7 @@ Partial Class Main
         Me.tbox_output_loca.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_output_loca.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_output_loca.Location = New System.Drawing.Point(15, 614)
-        Me.tbox_output_loca.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_output_loca.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_output_loca.Name = "tbox_output_loca"
         Me.tbox_output_loca.ReadOnly = True
         Me.tbox_output_loca.Size = New System.Drawing.Size(337, 64)
@@ -2393,7 +2444,7 @@ Partial Class Main
         Me.tbox_output_CCAV.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_output_CCAV.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_output_CCAV.Location = New System.Drawing.Point(15, 471)
-        Me.tbox_output_CCAV.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_output_CCAV.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_output_CCAV.Name = "tbox_output_CCAV"
         Me.tbox_output_CCAV.ReadOnly = True
         Me.tbox_output_CCAV.Size = New System.Drawing.Size(337, 118)
@@ -2415,7 +2466,7 @@ Partial Class Main
         Me.tbox_output_mergedMesh.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_output_mergedMesh.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_output_mergedMesh.Location = New System.Drawing.Point(15, 329)
-        Me.tbox_output_mergedMesh.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_output_mergedMesh.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_output_mergedMesh.Name = "tbox_output_mergedMesh"
         Me.tbox_output_mergedMesh.ReadOnly = True
         Me.tbox_output_mergedMesh.Size = New System.Drawing.Size(337, 118)
@@ -2437,7 +2488,7 @@ Partial Class Main
         Me.tbox_output_mergedTextures.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_output_mergedTextures.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_output_mergedTextures.Location = New System.Drawing.Point(15, 186)
-        Me.tbox_output_mergedTextures.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_output_mergedTextures.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_output_mergedTextures.Name = "tbox_output_mergedTextures"
         Me.tbox_output_mergedTextures.ReadOnly = True
         Me.tbox_output_mergedTextures.Size = New System.Drawing.Size(337, 118)
@@ -2459,7 +2510,7 @@ Partial Class Main
         Me.tbox_output_mergedMaterial.BackColor = System.Drawing.Color.Honeydew
         Me.tbox_output_mergedMaterial.ForeColor = System.Drawing.Color.DarkSlateGray
         Me.tbox_output_mergedMaterial.Location = New System.Drawing.Point(15, 43)
-        Me.tbox_output_mergedMaterial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbox_output_mergedMaterial.Margin = New System.Windows.Forms.Padding(4)
         Me.tbox_output_mergedMaterial.Name = "tbox_output_mergedMaterial"
         Me.tbox_output_mergedMaterial.ReadOnly = True
         Me.tbox_output_mergedMaterial.Size = New System.Drawing.Size(337, 118)
@@ -2486,7 +2537,7 @@ Partial Class Main
         Me.Controls.Add(Me.MenuStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Main"
         Me.Text = "BG3 Custom Horns Code Generator"
         Me.MenuStrip.ResumeLayout(False)
@@ -2732,4 +2783,9 @@ Partial Class Main
     Friend WithEvents lbl_help_texture_prefix As Label
     Friend WithEvents lbl_help_displayed_name As Label
     Friend WithEvents ToolTip As ToolTip
+    Friend WithEvents lbl_help_autofill_mesh_paths As Label
+    Friend WithEvents btn_autofill_mesh_paths As Button
+    Friend WithEvents lbl_help_autofill_texture_paths As Label
+    Friend WithEvents btn_autofill_texture_paths As Button
+    Friend WithEvents FolderBrowserDialog As FolderBrowserDialog
 End Class
