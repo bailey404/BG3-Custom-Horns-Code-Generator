@@ -1,0 +1,556 @@
+<!-- Humans - 0eb594cb-8820-4be6-a58d-8be7a1a98fba -->		
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HUM_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HUM_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_M"/>
+            </node>	
+				
+        <!-- ======== DISPLAYED_NAME FS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>		
+                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HUM_FS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_FS"/>
+            </node>				
+				
+        <!-- ======== DISPLAYED_NAME MS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="0eb594cb-8820-4be6-a58d-8be7a1a98fba"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HUM_MS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_MS"/>
+            </node>	
+			
+<!-- Elf - 6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a -->				
+
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_ELF_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_ELF_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_M"/>
+            </node>	
+				
+			<!-- ======== DISPLAYED_NAME FS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_ELF_FS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_FS"/>
+            </node>				
+				
+			<!-- ======== DISPLAYED_NAME MS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="6c038dcb-7eb5-431d-84f8-cecfaf1c0c5a"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_ELF_MS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_MS"/>
+            </node>			
+
+<!-- Half-Elf - 45f4ac10-3c89-4fb2-b37d-f973bb9110c0 -->	
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="45f4ac10-3c89-4fb2-b37d-f973bb9110c0"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HEL_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_F"/>
+            </node>		
+
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="45f4ac10-3c89-4fb2-b37d-f973bb9110c0"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HEL_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_M"/>
+            </node>	
+				
+        <!-- ======== DISPLAYED_NAME FS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="45f4ac10-3c89-4fb2-b37d-f973bb9110c0"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HEL_FS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_FS"/>
+            </node>				
+				
+        <!-- ======== DISPLAYED_NAME MS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="45f4ac10-3c89-4fb2-b37d-f973bb9110c0"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HEL_MS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_MS"/>
+            </node>			
+
+<!-- Drow - 4f5d1434-5175-4fa9-b7dc-ab24fba37929 -->		
+
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-ab24fba37929"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DRO_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>		
+                    <attribute id="RaceUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-ab24fba37929"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DRO_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_M"/>
+            </node>	
+				
+			<!-- ======== DISPLAYED_NAME FS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-ab24fba37929"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DRO_FS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_FS"/>
+            </node>				
+				
+			<!-- ======== DISPLAYED_NAME MS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-ab24fba37929"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DRO_MS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HUM_MS"/>
+            </node>			
+			
+			
+<!-- Tieflings - b6dccbed-30f3-424b-a181-c4540cf38197 -->			
+			
+
+        <!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="b6dccbed-30f3-424b-a181-c4540cf38197"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_TIF_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_TIF_F"/>
+            </node>
+				
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="b6dccbed-30f3-424b-a181-c4540cf38197"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_TIF_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_TIF_M"/>
+            </node>	
+				
+			<!-- ======== DISPLAYED_NAME FS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="b6dccbed-30f3-424b-a181-c4540cf38197"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_TIF_FS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_TIF_FS"/>
+            </node>				
+				
+			<!-- ======== DISPLAYED_NAME MS ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="1"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="b6dccbed-30f3-424b-a181-c4540cf38197"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_TIF_MS"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_TIF_MS"/>
+            </node>			
+			
+			
+
+<!-- Githyanki - bdf9b779-002c-4077-b377-8ea7c1faa795 -->	
+
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="bdf9b779-002c-4077-b377-8ea7c1faa795"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_GTY_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_GTY_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="bdf9b779-002c-4077-b377-8ea7c1faa795"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_GTY_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_GTY_M"/>
+            </node>	
+				
+
+<!-- Dwarf - 0ab2874d-cfdc-405e-8a97-d37bfbb23c52 -->	
+
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="0ab2874d-cfdc-405e-8a97-d37bfbb23c52"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DWR_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_DWR_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="0ab2874d-cfdc-405e-8a97-d37bfbb23c52"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DWR_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_DWR_M"/>
+            </node>	
+	
+
+<!-- Halfling - 78cd3bcc-1c43-4a2a-aa80-c34322c16a04 -->
+
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="78cd3bcc-1c43-4a2a-aa80-c34322c16a04"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HLF_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HLF_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="78cd3bcc-1c43-4a2a-aa80-c34322c16a04"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HLF_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HLF_M"/>
+            </node>	
+	
+
+<!-- Gnome - f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d -->	
+
+
+			<!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_GNO_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_GNO_F"/>
+            </node>
+			
+			<!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="f1b3f884-4029-4f0f-b158-1f9fe0ae5a0d"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_GNO_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_GNO_M"/>
+            </node>	
+				
+
+
+
+<!-- Dragonborn - 9c61a74a-20df-4119-89c5-d996956b6c66 -->		
+
+				
+        <!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DGB_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_DGB_F"/>
+            </node>				
+				
+        <!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="9c61a74a-20df-4119-89c5-d996956b6c66"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_DGB_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_DGB_M"/>
+            </node>			
+
+
+
+
+<!-- Half-Orc - 5c39a726-71c8-4748-ba8d-f768b3c11a91 -->	
+		
+        <!-- ======== DISPLAYED_NAME F ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="1"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="5c39a726-71c8-4748-ba8d-f768b3c11a91"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HRC_F"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HRC_F"/>
+            </node>				
+				
+        <!-- ======== DISPLAYED_NAME M ========== -->
+            <node id="CharacterCreationAppearanceVisual">
+			<!-- Default bodyshape = 0, alternate bodyshape = 1 -->
+                    <attribute id="BodyShape" type="uint8" value="0"/>
+			<!-- Masc = 0 , Fem = 1 -->
+                    <attribute id="BodyType" type="uint8" value="0"/>
+			<!-- This matches the .loca file that stores the names -->
+                    <attribute id="DisplayName" type="TranslatedString" handle="NAMEHANDLE" version="2"/>			
+                    <attribute id="RaceUUID" type="guid" value="5c39a726-71c8-4748-ba8d-f768b3c11a91"/>
+                    <attribute id="SlotName" type="FixedString" value="Horns"/>
+			<!-- Not referenced anywhere else, uniquely generated UUID   -->
+                    <attribute id="UUID" type="guid" value="CCAV_HRC_M"/>
+			<!-- This matches the UUID of the horn mesh in _merged-->
+                    <attribute id="VisualResource" type="guid" value="UUID_HRC_F"/>
+            </node>			
+
+
+

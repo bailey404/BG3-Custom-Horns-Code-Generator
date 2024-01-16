@@ -1,0 +1,1117 @@
+<!-- +++++++++++++++++++++++ Humanoid +++++++++++++++++++++++++++++++++++++ -->
+
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HUM_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HUM_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HUMANOID_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. TIF_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HUMANOID_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="HUM_F_MESH_PREFIX.HUM_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HUM_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HUM_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HUMANOID_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HUMANOID_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="HUM_M_MESH_PREFIX.HUM_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+				
+
+
+<!-- ========================= DISPLAYED_NAME FS ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HUM_FS" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HUM_FS_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HUMANOID_FS.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HUMANOID_FS.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="HUM_FS_MESH_PREFIX.HUM_FS_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME MS ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HUM_MS" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HUM_MS_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HUMANOID_MS.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HUMANOID_MS.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="HUM_MS_MESH_PREFIX.HUM_MS_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+			
+<!-- +++++++++++++++++++++++ Tiefling +++++++++++++++++++++++++++++++++++++ -->
+
+			
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_TIF_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="TIF_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_TIF_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. TIF_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_TIF_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="TIF_F_MESH_PREFIX.TIF_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_TIF_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="TIF_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_TIF_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_TIF_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="TIF_M_MESH_PREFIX.TIF_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+				
+
+
+<!-- ========================= DISPLAYED_NAME FS ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_TIF_FS" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="TIF_FS_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_TIF_FS.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_TIF_FS.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="TIF_FS_MESH_PREFIX.TIF_FS_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME MS ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_TIF_MS" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="TIF_MS_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_TIF_MS.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_TIF_MS.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="TIF_MS_MESH_PREFIX.TIF_MS_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+					
+
+<!-- +++++++++++++++++++++++ Githyanki +++++++++++++++++++++++++++++++++++++ -->					
+					
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_GTY_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="GTY_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_GTY_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. GTY_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_GTY_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="GTY_F_MESH_PREFIX.GTY_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_GTY_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="GTY_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_GTY_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_GTY_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_MESH_PREFIX.GTY_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+				
+				
+<!-- +++++++++++++++++++++++ Dwarf +++++++++++++++++++++++++++++++++++++ -->				
+				
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_DWR_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="DWR_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_DWR_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. DWR_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_DWR_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="DWR_F_MESH_PREFIX.DWR_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_DWR_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="DWR_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_DWR_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_DWR_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="DWR_M_MESH_PREFIX.DWR_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+				
+				
+<!-- +++++++++++++++++++++++ Halfling +++++++++++++++++++++++++++++++++++++ -->				
+
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HLF_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HLF_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HLF_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. HLF_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HLF_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="HLF_F_MESH_PREFIX.HLF_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HLF_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HLF_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HLF_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HLF_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="HLF_M_MESH_PREFIX.HLF_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- +++++++++++++++++++++++ Gnome +++++++++++++++++++++++++++++++++++++ -->
+
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_GNO_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="GNO_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_GNO_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. GNO_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_GNO_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="GNO_F_MESH_PREFIX.GNO_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_GNO_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="GNO_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_GNO_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_GNO_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="GNO_M_MESH_PREFIX.GNO_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+
+<!-- +++++++++++++++++++++++ Dragonborn +++++++++++++++++++++++++++++++++++++ -->
+
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_DGB_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="DGB_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_DGB_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. DGB_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_DGB_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="DGB_F_MESH_PREFIX.DGB_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_DGB_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="DGB_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_DGB_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_DGB_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="DGB_M_MESH_PREFIX.DGB_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+
+<!-- +++++++++++++++++++++++ Half-Orc +++++++++++++++++++++++++++++++++++++ -->
+
+<!-- ========================= DISPLAYED_NAME F ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />  				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HRC_F" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HRC_F_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<!-- No idea yet where the radius value comes from --> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HRC_F.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. HRC_F_NKD_Horns_X.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HRC_F.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+							<attribute id="ObjectID" type="FixedString" value="HRC_F_MESH_PREFIX.HRC_F_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	
+
+<!-- ========================= DISPLAYED_NAME M ================================ -->
+				
+			<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+	<!-- Need to figure out where BoundsMax, BoundsMin, Center values come from -->   				
+					<attribute id="BoundsMax" type="fvec3" value="0.2241342 1.923792 0.08434314" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2241358 1.752886 -0.09472436" />
+					<attribute id="Center" type="fvec3" value="-7.748604E-07 1.838339 -0.005190611" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="HairType" type="uint8" value="0" />
+	<!-- Unique generated UUID for Horns, Referenced in CharacterCreationAppearanceVisuals.lsx-->
+					<attribute id="ID" type="FixedString" value="UUID_HRC_M" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+	<!-- File Name -->
+					<attribute id="Name" type="LSString" value="HRC_M_MESH_PREFIX" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" /> 
+					<attribute id="Radius" type="float" value="0.2560371" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="edda91cd-d2be-3296-087c-45477f36daaa" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Horns" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+	<!-- File Location for the mesh i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.GR2 -->				
+					<attribute id="SourceFile" type="LSString" value="PATH_HRC_M.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+	<!-- File Location for the mesh dummy root, i.e. Generated/Public/Saers_Horns/[PAK]_Saers_Horns/Horns/MESH_PREFIX.Dummy_Root.0 -->				
+					<attribute id="Template" type="FixedString" value="PATH_HRC_M.Dummy_Root.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241509" />
+				
+					<children>	
+					<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node> 
+						
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+	<!-- Material ID from the MaterialBanks -->				
+							<attribute id="MaterialID" type="FixedString" value="UUID_MATERIAL" />
+						<!-- Must match name of mesh itself, not just file name -->
+							<attribute id="ObjectID" type="FixedString" value="HRC_M_MESH_PREFIX.HRC_M_MESH_PREFIX.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						
+					
+						
+					</children>
+				</node>	

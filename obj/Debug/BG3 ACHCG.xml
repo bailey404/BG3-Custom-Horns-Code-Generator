@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BG3 ACHCG
+</name>
+</assembly>
+<members>
+<member name="T:BG3_ACHCG.My.Resources.Main">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_clear_all_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_clear_meshpath_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_clear_meshUUID_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_clear_snippets_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_clear_texturepath_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_clear_textureUUID_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_gen_allUUID_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_gen_handle_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_gen_meshUUID_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_gen_snippets_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_gen_textureUUID_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_BM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_dragon_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_dragon_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_dwarf_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_dwarf_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_gith_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_gith_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_gnome_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_gnome_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_half_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_half_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_humanoid_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_humanoid_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_humanoid_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_humanoid_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_MSK_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_NM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_orc_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_orc_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_PM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_tief_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_tief_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_tief_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.btn_path_tief_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.cbox_CCAV_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.cbox_loca_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.cbox_merged_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_clear_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_generate_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_loca_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_dragon_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_dwarf_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_files_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_gith_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_gnome_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_halfling_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_humanoid_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_orc_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_mesh_tiefling_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_dragon_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_dwarf_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_gith_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_gnome_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_half_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_humanoid_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_orc_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_meshUUIDs_tief_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_snippets_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_textures_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_textureUUIDs_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.grp_UUIDs_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_displayed_name_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_mesh_prefix_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_name_handle_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_BM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_dragon_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_dragon_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_dwarf_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_dwarf_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_gith_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_gith_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_gnome_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_gnome_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_half_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_half_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_humanoid_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_humanoid_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_humanoid_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_humanoid_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_MSK_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_NM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_orc_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_orc_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_PM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_tief_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_tief_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_tief_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_path_tief_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_snippet_merged_CCAV_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_snippet_merged_loca_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_snippet_merged_material_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_snippet_merged_mesh_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_snippet_merged_textures_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_texture_prefix_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_BM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_dgb_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_dgb_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_dwr_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_dwr_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_git_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_git_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_gnm_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_gnm_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_hlf_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_hlf_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_hum_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_hum_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_hum_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_hum_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_material_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_MSK_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_NM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_orc_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_orc_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_PM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_tif_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_tif_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_tif_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.lbl_UUID_tif_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.MenuStrip_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.MenuStrip_TrayLocation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Point similar to {X=17,Y=17}.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.OpenFileDialog_TrayLocation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Point similar to {X=125,Y=17}.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_displayed_name_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_mesh_prefix_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_namehandle_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_output_CCAV_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_output_loca_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_output_mergedMaterial_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_output_mergedMesh_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_output_mergedTextures_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_BM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_dragon_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_dragon_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_dwarf_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_dwarf_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_gith_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_gith_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_gnome_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_gnome_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_half_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_half_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_humanoid_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_humanoid_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_humanoid_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_humanoid_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_MSK_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_NM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_orc_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_orc_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_PM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_tif_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_tif_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_tif_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_path_tif_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_texture_prefix_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_BM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_dgb_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_dgb_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_dwr_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_dwr_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_git_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_git_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_gnm_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_gnm_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_hlf_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_hlf_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_hum_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_hum_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_hum_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_hum_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_material_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_MSK_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_NM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_orc_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_orc_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_PM_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_tif_F_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_tif_FS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_tif_M_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.tbox_UUID_tif_MS_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Main.ToolTip_TrayLocation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Point similar to {X=260,Y=17}.
+</summary>
+</member>
+<member name="T:BG3_ACHCG.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:BG3_ACHCG.My.Resources.Snips">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.CCAV_snip_input">
+<summary>
+  Looks up a localized string similar to &lt;!-- Humans - 0eb594cb-8820-4be6-a58d-8be7a1a98fba --&gt;		
+
+			&lt;!-- ======== DISPLAYED_NAME F ========== --&gt;
+            &lt;node id=&quot;CharacterCreationAppearanceVisual&quot;&gt;
+			&lt;!-- Default bodyshape = 0, alternate bodyshape = 1 --&gt;
+                    &lt;attribute id=&quot;BodyShape&quot; type=&quot;uint8&quot; value=&quot;0&quot;/&gt;
+			&lt;!-- Masc = 0 , Fem = 1 --&gt;
+                    &lt;attribute id=&quot;BodyType&quot; type=&quot;uint8&quot; value=&quot;1&quot;/&gt;
+			&lt;!-- This matches the .loca file that stores the names --&gt;
+                    &lt;attribute id=&quot;DisplayNam [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.loca_snip_input">
+<summary>
+  Looks up a localized string similar to &lt;content contentuid=&quot;UUIDhandle&quot; version=&quot;1&quot;&gt;DISPLAYED_NAME&lt;/content&gt;.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.merged_material_snip_input">
+<summary>
+  Looks up a localized string similar to &lt;!-- ======================= DISPLAYED_NAME Material ====================== --&gt;
+			&lt;node id=&quot;Resource&quot;&gt;
+					&lt;attribute id=&quot;DiffusionProfileUUID&quot; type=&quot;FixedString&quot; value=&quot;&quot; /&gt;
+	&lt;!-- Referenced in VisualBank as the MaterialID  --&gt;
+					&lt;attribute id=&quot;ID&quot; type=&quot;FixedString&quot; value=&quot;UUID_MATERIAL&quot; /&gt;
+					&lt;attribute id=&quot;MaterialType&quot; type=&quot;uint8&quot; value=&quot;18&quot; /&gt;
+	&lt;!-- Horns texture file prefix  --&gt;
+					&lt;attribute id=&quot;Name&quot; type=&quot;LSString&quot; value=&quot;TEXTURE_PREFIX&quot; /&gt;
+	&lt;!-- This is the same for all horns, d [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.merged_mesh_snip_input">
+<summary>
+  Looks up a localized string similar to &lt;!-- +++++++++++++++++++++++ Humanoid +++++++++++++++++++++++++++++++++++++ --&gt;
+
+&lt;!-- ========================= DISPLAYED_NAME F ================================ --&gt;
+				
+			&lt;node id=&quot;Resource&quot;&gt;
+					&lt;attribute id=&quot;AttachBone&quot; type=&quot;FixedString&quot; value=&quot;&quot; /&gt;
+					&lt;attribute id=&quot;AttachmentSkeletonResource&quot; type=&quot;FixedString&quot; value=&quot;&quot; /&gt;
+					&lt;attribute id=&quot;BlueprintInstanceResourceID&quot; type=&quot;FixedString&quot; value=&quot;&quot; /&gt;  				
+					&lt;attribute id=&quot;BoundsMax&quot; type=&quot;fvec3&quot; value=&quot;0.2241342 1.923792 0.08434314&quot; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:BG3_ACHCG.My.Resources.Snips.merged_texture_snip_input">
+<summary>
+  Looks up a localized string similar to &lt;!-- ================== DISPLAYED_NAME Textures ======================= --&gt;
+			
+&lt;!-- Physical Map --&gt;
+
+&lt;node id=&quot;Resource&quot;&gt;
+					&lt;attribute id=&quot;Depth&quot; type=&quot;int32&quot; value=&quot;1&quot; /&gt;
+					&lt;attribute id=&quot;Height&quot; type=&quot;int32&quot; value=&quot;1024&quot; /&gt;
+	&lt;!-- Referenced in MaterialBank --&gt;				
+					&lt;attribute id=&quot;ID&quot; type=&quot;FixedString&quot; value=&quot;UUID_PM&quot; /&gt;
+	&lt;!-- Match file name --&gt;
+					&lt;attribute id=&quot;Name&quot; type=&quot;LSString&quot; value=&quot;TEXTURE_PREFIX_PM&quot; /&gt;
+					&lt;attribute id=&quot;SRGB&quot; type=&quot;bool&quot; value=&quot;False&quot; /&gt;
+	&lt;!-- Textu [rest of string was truncated]&quot;;.
+</summary>
+</member>
+</members>
+</doc>

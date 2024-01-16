@@ -1,0 +1,81 @@
+<!-- ================== DISPLAYED_NAME Textures ======================= -->
+			
+<!-- Physical Map -->
+
+<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+	<!-- Referenced in MaterialBank -->				
+					<attribute id="ID" type="FixedString" value="UUID_PM" />
+	<!-- Match file name -->
+					<attribute id="Name" type="LSString" value="TEXTURE_PREFIX_PM" />
+					<attribute id="SRGB" type="bool" value="False" />
+	<!-- Texture file location -->
+					<attribute id="SourceFile" type="LSString" value="PATH_PM" />
+					<attribute id="Streaming" type="bool" value="True" />
+	<!-- Match file name -->
+					<attribute id="Template" type="FixedString" value="TEXTURE_PREFIX_PM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+				</node>
+
+<!-- Base Color Map -->
+
+	<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+		<!-- Referenced in MaterialBank -->
+					<attribute id="ID" type="FixedString" value="UUID_BM" />
+		<!-- Match file name -->
+					<attribute id="Name" type="LSString" value="TEXTURE_PREFIX_BM" />
+					<attribute id="SRGB" type="bool" value="True" />
+		<!-- Texture file location -->
+					<attribute id="SourceFile" type="LSString" value="PATH_BM" />
+					<attribute id="Streaming" type="bool" value="True" />
+		<!-- Match file name -->
+					<attribute id="Template" type="FixedString" value="TEXTURE_PREFIX_BM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+				</node>
+				
+<!-- Normal Map -->	
+			
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+		<!-- Referenced in MaterialBank -->
+					<attribute id="ID" type="FixedString" value="UUID_NM" />
+		<!-- Match file name -->
+					<attribute id="Name" type="LSString" value="TEXTURE_PREFIX_NM" />
+					<attribute id="SRGB" type="bool" value="False" />
+		<!-- Texture file location -->
+					<attribute id="SourceFile" type="LSString" value="PATH_NM" />
+					<attribute id="Streaming" type="bool" value="True" />
+		<!-- Match file name -->
+					<attribute id="Template" type="FixedString" value="TEXTURE_PREFIX_NM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+				</node>				
+				
+<!-- Gradient Mask Map -->	
+	
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="128" />
+		<!-- Referenced in MaterialBank as SkinGradientHorn_MSK -->
+					<attribute id="ID" type="FixedString" value="UUID_MSK" />
+		<!-- Match file name -->
+					<attribute id="Name" type="LSString" value="TEXTURE_PREFIX_MSK" />
+					<attribute id="SRGB" type="bool" value="False" />
+		<!-- Texture file location -->
+					<attribute id="SourceFile" type="LSString" value="PATH_MSK" />
+					<attribute id="Streaming" type="bool" value="True" />
+		<!-- Match file name -->
+					<attribute id="Template" type="FixedString" value="TEXTURE_PREFIX_MSK" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="128" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209024" />
+				</node>	
